@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Das verrückte SZFG Labyrinth</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(#f6e8c9,#e4cf9a);
+color:#3d2b1f;
+}
+
+header{
+background:#6f4b2c;
+padding:20px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#fff8dc;
+text-decoration:none;
+font-weight:bold;
+padding:8px 12px;
+border-radius:8px;
+}
+
+nav a:hover{
+background:rgba(255,255,255,0.15);
+}
+
+.hero{
+background:
+linear-gradient(rgba(80,50,20,.75),rgba(80,50,20,.75)),
+repeating-linear-gradient(
+45deg,
+#c7a877 0px,
+#c7a877 20px,
+#b89362 20px,
+#b89362 40px
+);
+padding:100px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 20px;
+}
+
+details{
+background:#fbf3de;
+border:2px solid #9c7348;
+border-radius:15px;
+margin-bottom:18px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+summary{
+padding:20px;
+font-size:22px;
+font-weight:bold;
+cursor:pointer;
+background:#ecd6a7;
+}
+
+.content{
+padding:25px;
+}
+
+.content ul,
+.content ol{
+margin-left:25px;
+margin-top:10px;
+}
+
+.content h3{
+margin-top:15px;
+margin-bottom:10px;
+}
+
+footer{
+background:#4f351d;
+color:#fff8dc;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+summary{
+font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<a href="#start">Startseite</a>
+<a href="#spiel">Spielübersicht</a>
+<a href="#regeln">Spielregeln</a>
+<a href="#ziel">Ziel</a>
+<a href="#material">Material</a>
+</nav>
+
+</header>
+
+<section class="hero" id="start">
+
+<h1>🧭 Das verrückte SZFG Labyrinth</h1>
+
+<p>
+Entdecke die Welt der Salzgitter AG auf eine völlig neue Art.
+</p>
+
+</section>
+
+<div class="container">
+
+<details id="spiel">
+<summary>🎲 Spielübersicht</summary>
+
+<div class="content">
+
+<p>
+Willkommen beim verrückten Salzgitter-Labyrinth!
+Tauche ein in die spannende Welt der Salzgitter AG und entdecke verschiedene Produktionsanlagen,
+Unternehmensbereiche und Technologien.
+</p>
+
+<br>
+
+<p>
+Doch aufgepasst: Die Wege verändern sich ständig!
+Durch geschicktes Verschieben der Gänge musst du dir deinen Weg zu den gesuchten Zielen bahnen.
+Dabei sind strategisches Denken, vorausschauendes Planen und ein wenig Glück gefragt.
+</p>
+
+<br>
+
+<p><strong>Spielinformationen:</strong></p>
+
+<ul>
+<li>Spieleranzahl: 2–4 Personen</li>
+<li>Spieldauer: ca. 20–30 Minuten</li>
+<li>Spielprinzip: Strategie und Geschicklichkeit</li>
+</ul>
+
+<br>
+
+<p>
+Wer findet zuerst alle seine Ziele und schafft es zurück zum Start?
+</p>
+
+</div>
+</details>
+
+<details id="regeln">
+<summary>📜 Spielregeln</summary>
+
+<div class="content">
+
+<h3>Spielvorbereitung</h3>
+
+<ol>
+<li>Mischt die Gängekarten und legt sie zufällig auf die freien Felder des Spielbretts.</li>
+<li>Eine Gängekarte bleibt außerhalb des Spielfeldes liegen.</li>
+<li>Mischt die Zielkarten und verteilt sie gleichmäßig an alle Spieler.</li>
+<li>Jeder Spieler legt seine Zielkarten als verdeckten Stapel vor sich ab.</li>
+<li>Jeder Spieler wählt eine Spielfigur und stellt sie auf sein Startfeld.</li>
+<li>Jeder Spieler schaut sich geheim seine oberste Zielkarte an.</li>
+</ol>
+
+<br>
+
+<h3>Spielablauf</h3>
+
+<p>
+Der jüngste Spieler beginnt. Danach wird im Uhrzeigersinn gespielt.
+</p>
+
+<br>
+
+<h3>Schritt 1: Labyrinth verschieben</h3>
+
+<p>
+Der Spieler schiebt die freie Gängekarte an einer markierten Stelle in das Spielfeld.
+Dadurch verschiebt sich eine Reihe oder Spalte.
+Die herausgeschobene Karte wird für den nächsten Spielzug verwendet.
+</p>
+
+<br>
+
+<h3>Schritt 2: Spielfigur bewegen</h3>
+
+<p>
+Nach dem Verschieben darf die Spielfigur entlang der verbundenen Wege bewegt werden.
+Dabei können beliebig viele erreichbare Felder zurückgelegt werden.
+</p>
+
+<br>
+
+<h3>Ziele erreichen</h3>
+
+<p>
+Jeder Spieler versucht das Motiv seiner aktuellen Zielkarte auf dem Spielfeld zu erreichen.
+Wird das entsprechende Feld erreicht und der Zug dort beendet,
+gilt das Ziel als gefunden.
+</p>
+
+<br>
+
+<h3>Wichtige Regeln</h3>
+
+<ul>
+<li>Das Verschieben einer Gängekarte ist in jedem Zug Pflicht.</li>
+<li>Die letzte Verschiebung darf nicht direkt rückgängig gemacht werden.</li>
+<li>Mehrere Spielfiguren dürfen auf demselben Feld stehen.</li>
+<li>Andere Spieler dürfen überholt werden.</li>
+<li>Wird eine Figur aus dem Spielfeld geschoben, erscheint sie auf der gegenüberliegenden Seite.</li>
+<li>Zielkarten müssen in der Reihenfolge des Stapels erfüllt werden.</li>
+</ul>
+
+<br>
+
+<h3>Spielende</h3>
+
+<p>
+Sobald ein Spieler alle Zielkarten erfüllt hat, muss er zu seinem ursprünglichen Startfeld zurückkehren.
+</p>
+
+<p>
+<strong>Wer das zuerst schafft, gewinnt das Spiel!</strong>
+</p>
+
+</div>
+</details>
+
+<details id="ziel">
+<summary>🏆 Ziel des Spiels</summary>
+
+<div class="content">
+
+<p>
+Entdecke die Salzgitter AG und finde alle deine Ziele.
+</p>
+
+<br>
+
+<p>
+Jeder Spieler erhält mehrere Zielkarten mit Motiven aus der Welt der Salzgitter AG.
+Diese können Produktionsanlagen, Technologien oder Unternehmensbereiche darstellen.
+</p>
+
+<br>
+
+<p>
+Durch geschicktes Verschieben der Wege und das Bewegen der eigenen Spielfigur müssen die gesuchten Ziele nacheinander erreicht werden.
+</p>
+
+<br>
+
+<p>
+<strong>
+Das Spiel gewinnt, wer zuerst alle seine Zielkarten erfüllt hat und anschließend wieder sein Startfeld erreicht.
+</strong>
+</p>
+
+</div>
+</details>
+
+<details id="material">
+<summary>♟️ Spielmaterial</summary>
+
+<div class="content">
+
+<ul>
+<li>1 Spielbrett mit verschiebbarem Labyrinth</li>
+<li>Gängekarten zum Verändern der Wege</li>
+<li>Zielkarten mit Motiven der Salzgitter AG</li>
+<li>2–4 Spielfiguren</li>
+<li>Spielanleitung</li>
+</ul>
+
+</div>
+</details>
+
+<details>
+<summary>ℹ️ Über das Projekt</summary>
+
+<div class="content">
+Dieses Brettspiel wurde entwickelt, um die Welt der Salzgitter AG spielerisch kennenzulernen.
+Dabei werden verschiedene Unternehmensbereiche, Produktionsanlagen und Technologien in ein spannendes Labyrinth-Abenteuer eingebunden.
+</div>
+
+</details>
+
+</div>
+
+<footer>
+© 2026 Das verrückte SZFG Labyrinth
+</footer>
+
+</body>
+</html>
